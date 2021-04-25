@@ -1,0 +1,376 @@
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: white;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+#homepage {
+    /* background: url(../images/francis-bouffard-fRubchzIX_A-unsplash.jpg); */
+    /* Image source: https://unsplash.com/photos/fRubchzIX_A */
+    background: url(../images/pexels-anni-roenkae-2868948-2.png);
+    /* background-color: #0B0C10; */
+    /* background-position: center; */
+    background-size: cover;
+    height: 100%;
+}
+
+#aboutpage, #contactpage, #workspage {
+    /*background-color: #0B0C10; */
+    background-color: #3A405A;
+}
+
+.nav_links{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none; 
+    font-weight: bold;
+    top: 300px;
+    width: 100%;
+
+}
+
+p {
+    margin: 20px;
+}
+
+nav {
+    /* background-color: rgba(27, 35, 43, 0.658); */
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.nav_item {
+    display: none;
+}
+
+#hamburger {
+    top: 0;
+    right: 0;
+    margin: 20px;
+    background-color: #DFFDFF;
+    color: black;
+    border: none;
+    font-size: xx-large;
+    text-shadow: none;
+}
+
+.topbar {
+    background-color: #DFFDFF;
+}
+
+.nav_links a {
+    text-decoration: none; 
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+#homepage .nav_links #home a {
+    font-weight: bold;
+    /* text-decoration:underline; */
+    color: #0b9ff5;
+}
+
+#aboutpage .nav_links #about a {
+    font-weight: bold;
+    /* text-decoration:underline; */
+    color: #0b9ff5;
+}
+
+#contactpage .nav_links #contact a {
+    font-weight: bold;
+    /* text-decoration:underline; */
+    color: #0b9ff5;
+}
+
+#workspage .nav_links #works a {
+    font-weight: bold;
+    /* text-decoration:underline; */
+    color: #0b9ff5;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 7px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+}
+.skip a:focus {
+    position: absolute;
+    top: -10px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 20px;
+    text-align: center;
+    font-weight: lighter;
+    color: #0b9ff5;
+}
+
+#homepage h1 {
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    1px 1px 0 #000;
+    top: 50px;
+}
+
+#selfportrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headshot {
+    display: block;
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    bottom: 0;
+    margin-top: -50;
+    width: 100%;
+    overflow: hidden;
+    text-shadow: 
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+#homepage footer {
+    position: fixed;
+}
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+#homepage h2 {
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    /*color: #0b9ff5; */
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h2 {
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+}
+
+#contactme {
+    text-align: center;
+    color: #0b9ff5;
+}
+
+#casualphoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 80vw);
+    justify-content: center;
+    grid-gap: 5px;
+    position: relative;
+}
+
+.grid-image img:hover {
+    opacity: 55%;
+}
+
+.grid-image img {
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    min-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablet: */
+    nav {
+        background-color: #A1869E;
+ 
+    }
+
+    #homepage .nav_links #home a {
+        font-size:50px;
+        color: #0b9ff5;
+    }
+    
+    #aboutpage .nav_links #about a {
+        font-size:50px;
+        color: #0b9ff5;
+    }
+    
+    #contactpage .nav_links #contact a {
+        font-size: 50px;
+        color: #0b9ff5;
+    }
+    
+    #workspage .nav_links #works a {
+        font-size:50px;
+        color: #0b9ff5;
+    }
+
+    .nav_links {
+        align-items: center;
+        font-size: 30px;
+        
+    }
+    
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    /* For tablet: */
+    #hamburger {
+        display: none;
+    }
+
+    .nav_item {
+        display: block;
+    }
+
+    .nav_links {
+        flex-direction: row;
+        font-size: x-large;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: 40vh 40vh;
+    }
+
+    #homepage .nav_links #home a {
+        font-size: xx-large;
+    }
+    
+    #aboutpage .nav_links #about a {
+        font-size: xx-large;
+    }
+    
+    #contactpage .nav_links #contact a {
+        font-size: xx-large;
+    }
+    
+    #workspage .nav_links #works a {
+        font-size: xx-large;
+    }
+    
+  }
+
+  @media only screen and (min-width: 1200px) {
+      /*For desktop: */
+    nav {
+        position: fixed;
+        top: 50px;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        min-width: 0;
+        flex: auto;
+        height: 300px;
+        
+    }
+
+    #aboutpage main, #contactpage main, #workspage main {
+        padding: 0px;
+        margin-left: 10%;
+    }
+
+    #aboutpage nav, #contactpage nav, #workspage nav {
+        width: 10%;
+        height:fit-content;
+    }
+
+    #aboutpage footer, #contactpage footer, #workspage footer {
+        margin-left: 10%;
+        height:fit-content;
+    }
+
+    .nav_links{
+        margin-left: 20px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        text-decoration: none;   
+        align-items: flex-start;
+        font-size: large;
+    
+    }
+
+    #homepage main {
+        top: 50px;
+    }
+
+    #workspage .container {
+        margin-left: auto;
+    }
+
+    .main {
+        margin-left: 160px; /* Same as the width of the sidebar */
+        padding: 0px 10px;
+      }
+
+      #hamburger {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 30vw);
+        grid-template-rows: 30vw 30vw 30vw;
+    }
+  }
